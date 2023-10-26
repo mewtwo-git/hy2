@@ -1,0 +1,46 @@
+name: Node.js CI
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 22 * * *"
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  deploy:
+    name: Build and Deploy
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+        with:
+          ref: main
+
+      - name: Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+          cache: "npm"
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build project
+        id: build
+        run: |
+          npm run build
+          echo "NOW=$(date)" >> "$GITHUB_OUTPUT"
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        if: github.ref == 'refs/heads/main'
+        with:
+          full_commit_message: "Updated at ${{ steps.build.outputs.NOW }}"
+          force_orphan: true
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: release
+          publish_dir: ./dist
