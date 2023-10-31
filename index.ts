@@ -53,9 +53,9 @@ const main = async (urls: string[]) => {
 
 (async () => {
   await main([
-    "https://www.githubip.xyz/Alvin9999/pac2/master/hysteria2/2/config.json",
-    "https://www.gitlabip.xyz/Alvin9999/pac2/master/hysteria2/13/config.json",
     "https://www.githubip.xyz/Alvin9999/pac2/master/hysteria2/config.json",
+    "https://www.githubip.xyz/Alvin9999/pac2/master/hysteria2/2/config.json",
     "https://www.gitlabip.xyz/Alvin9999/pac2/master/hysteria2/1/config.json",
+    "https://www.gitlabip.xyz/Alvin9999/pac2/master/hysteria2/13/config.json",
   ]);
 })();
