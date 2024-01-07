@@ -1,0 +1,37 @@
+proxies:
+  - name: TW_0 - hy2
+    type: hysteria2
+    server: www.dtku46.xyz
+    port: 55307
+    up: 50
+    down: 500
+    password: dongtaiwang.com
+    sni: www.bing.com
+    skip-cert-verify: true
+  - name: US_1 - hy2
+    type: hysteria2
+    server: 167.160.90.252
+    port: 63530
+    up: 50
+    down: 500
+    password: dongtaiwang.com
+    sni: www.bing.com
+    skip-cert-verify: true
+  - name: US_2 - hy2
+    type: hysteria2
+    server: 108.181.22.155
+    port: 27710
+    up: 50
+    down: 500
+    password: dongtaiwang.com
+    sni: www.bing.com
+    skip-cert-verify: true
+  - name: US_3 - hy2
+    type: hysteria2
+    server: 108.181.22.155
+    port: 27710
+    up: 50
+    down: 500
+    password: dongtaiwang.com
+    sni: www.bing.com
+    skip-cert-verify: true
