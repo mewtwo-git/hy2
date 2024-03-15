@@ -1,0 +1,37 @@
+proxies:
+  - name: FR_0 - hy2
+    type: hysteria2
+    server: 62.210.103.0
+    port: 22483
+    up: 50
+    down: 500
+    password: dongtaiwang.com
+    sni: www.bing.com
+    skip-cert-verify: true
+  - name: FR_1 - hy2
+    type: hysteria2
+    server: 62.210.103.0
+    port: 22483
+    up: 50
+    down: 500
+    password: dongtaiwang.com
+    sni: www.bing.com
+    skip-cert-verify: true
+  - name: US_2 - hy2
+    type: hysteria2
+    server: 64.110.25.11
+    port: 33337
+    up: 50
+    down: 500
+    password: dongtaiwang.com
+    sni: www.bing.com
+    skip-cert-verify: true
+  - name: FR_3 - hy2
+    type: hysteria2
+    server: 51.159.77.198
+    port: 53967
+    up: 50
+    down: 500
+    password: dongtaiwang.com
+    sni: www.bing.com
+    skip-cert-verify: true
