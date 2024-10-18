@@ -1,0 +1,37 @@
+proxies:
+  - name: RU_0 - hy2
+    type: hysteria2
+    server: 185.22.152.93
+    port: .nan
+    up: 50
+    down: 500
+    password: dongtaiwang.com
+    sni: www.bing.com
+    skip-cert-verify: true
+  - name: RU_1 - hy2
+    type: hysteria2
+    server: 185.22.152.93
+    port: .nan
+    up: 50
+    down: 500
+    password: dongtaiwang.com
+    sni: www.bing.com
+    skip-cert-verify: true
+  - name: RU_2 - hy2
+    type: hysteria2
+    server: 185.22.152.93
+    port: .nan
+    up: 50
+    down: 500
+    password: dongtaiwang.com
+    sni: www.bing.com
+    skip-cert-verify: true
+  - name: RU_3 - hy2
+    type: hysteria2
+    server: 185.22.152.93
+    port: .nan
+    up: 50
+    down: 500
+    password: dongtaiwang.com
+    sni: www.bing.com
+    skip-cert-verify: true
